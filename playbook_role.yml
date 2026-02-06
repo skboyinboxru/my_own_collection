@@ -1,6 +1,7 @@
----
 - name: Testing my module
   hosts: localhost
   gather_facts: false
+  collections:
+    - my_own_namespace.yandex_cloud_elk
   roles:
-    - my_role
+    - my_own_namespace.yandex_cloud_elk.my_role
